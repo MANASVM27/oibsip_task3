@@ -1,0 +1,81 @@
+.temperature-converter {
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #add8e6, #000);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .temperature-converter:hover {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .temperature-input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease-in-out;
+    font-size: 18px;
+  }
+  
+  .temperature-input:hover {
+    border-color: #007bff;
+  }
+  
+  .unit-select {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    appearance: none;
+    cursor: pointer;
+    position: relative;
+    transition: border-color 0.3s ease-in-out;
+    font-size: 18px;
+  }
+  
+  .unit-select:hover {
+    border-color: #007bff;
+  }
+  
+  .unit-select::after {
+    content: '▼';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  .unit-select:focus {
+    outline: none;
+  }
+  
+  .convert-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 18px;
+  }
+  
+  .convert-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .converted-temperature p {
+    font-size: 28px;
+    margin-top: 30px;
+    color: white;
+  }
+  
